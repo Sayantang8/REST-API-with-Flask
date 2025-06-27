@@ -26,8 +26,9 @@ This is a simple REST API project built using **Python and Flask** that manages 
 
 ```
 user-api/
-├── app.py          # Main Flask app
-└── README.md       # Project documentation
+├── app.py             # Main Flask app
+├── README.md          # Project documentation
+└── requirements.txt   # Dependencies
 ```
 
 ---
@@ -44,7 +45,7 @@ cd REST-API-with-Flask
 ### 2. Install Dependencies
 
 ```bash
-pip install flask
+pip install -r requirements.txt
 ```
 
 ### 3. Run the App
@@ -54,6 +55,16 @@ python app.py
 ```
 
 📍 Server runs at: `http://127.0.0.1:5000/`
+
+---
+
+## 📦 `requirements.txt`
+
+```txt
+Flask==2.3.3
+```
+
+✅ This keeps your environment clean and ensures compatibility.
 
 ---
 
