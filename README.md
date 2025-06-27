@@ -1,32 +1,34 @@
+# 🧩 User Management REST API with Flask
+
 This is a simple REST API project built using **Python and Flask** that manages user data in-memory. It supports full CRUD operations — perfect for learning the basics of RESTful API design.
 
 ---
 
 ## 🚀 Features
 
-- ✅ Get all users
-- 🔍 Get a user by ID
-- ➕ Add a new user
-- 🛠️ Update an existing user
-- ❌ Delete a user
+- ✅ Get all users  
+- 🔍 Get a user by ID  
+- ➕ Add a new user  
+- 🛠️ Update an existing user  
+- ❌ Delete a user  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python 3.x
-- Flask
-- Postman / curl for testing
+- Python 3.x  
+- Flask  
+- Postman / curl for testing  
 
 ---
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 user-api/
 ├── app.py          # Main Flask app
 └── README.md       # Project documentation
-\`\`\`
+```
 
 ---
 
@@ -34,22 +36,22 @@ user-api/
 
 ### 1. Clone the Repository
 
-\`\`\`bash
+```bash
 git clone https://github.com/Sayantang8/REST-API-with-Flask.git
 cd REST-API-with-Flask
-\`\`\`
+```
 
 ### 2. Install Dependencies
 
-\`\`\`bash
+```bash
 pip install flask
-\`\`\`
+```
 
 ### 3. Run the App
 
-\`\`\`bash
+```bash
 python app.py
-\`\`\`
+```
 
 📍 Server runs at: `http://127.0.0.1:5000/`
 
@@ -59,14 +61,15 @@ python app.py
 
 ### ➕ Create a User
 
-- **POST** `/users`
+- **POST** `/users`  
 - **Body**:
-\`\`\`json
+
+```json
 {
   "id": 1,
   "name": "Sayantan"
 }
-\`\`\`
+```
 
 ---
 
@@ -78,20 +81,21 @@ python app.py
 
 ### 🔍 Get a User by ID
 
-- **GET** `/users/<id>`
+- **GET** `/users/<id>`  
 - Example: `/users/1`
 
 ---
 
 ### 🛠️ Update a User
 
-- **PUT** `/users/<id>`
+- **PUT** `/users/<id>`  
 - **Body**:
-\`\`\`json
+
+```json
 {
   "name": "Updated Name"
 }
-\`\`\`
+```
 
 ---
 
@@ -103,9 +107,9 @@ python app.py
 
 ## 🧪 Test with curl
 
-\`\`\`bash
+```bash
 # Add a user
-curl -X POST http://127.0.0.1:5000/users -H "Content-Type: application/json" -d "{\\"id\\":1,\\"name\\":\\"Sayantan\\"}"
+curl -X POST http://127.0.0.1:5000/users -H "Content-Type: application/json" -d "{\"id\":1,\"name\":\"Sayantan\"}"
 
 # Get all users
 curl http://127.0.0.1:5000/users
@@ -114,17 +118,17 @@ curl http://127.0.0.1:5000/users
 curl http://127.0.0.1:5000/users/1
 
 # Update user
-curl -X PUT http://127.0.0.1:5000/users/1 -H "Content-Type: application/json" -d "{\\"name\\":\\"Updated Name\\"}"
+curl -X PUT http://127.0.0.1:5000/users/1 -H "Content-Type: application/json" -d "{\"name\":\"Updated Name\"}"
 
 # Delete user
 curl -X DELETE http://127.0.0.1:5000/users/1
-\`\`\`
+```
 
 ---
 
 ## 📝 Notes
 
-- This API uses an in-memory list, so data resets every time you restart the server.
+- This API uses an in-memory list, so data resets every time you restart the server.  
 - Designed for educational/demo purposes.
 
 ---
@@ -134,3 +138,8 @@ curl -X DELETE http://127.0.0.1:5000/users/1
 MIT License
 
 ---
+
+## 🙋‍♂️ Author
+
+**Sayantan**  
+💬 Drop a ⭐ if you found this helpful!
